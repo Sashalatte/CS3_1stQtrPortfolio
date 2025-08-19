@@ -17,20 +17,23 @@
     <button onclick="totalMeal()"> Accept Input </button> <br>
     <p> <span id="alsototalMeal"> </span> </p>
 
-
     <script>
         function totalMeal() {
             let mp = parseFloat(document.getElementById("mp").value)
             let tip = parseFloat(document.getElementById("tip").value)
             let sc = parseFloat(document.getElementById("sc").value)
-
             let totalCost = mp + tip + (sc / 100 * mp)
-
             document.getElementById("alsototalMeal").innerHTML = "Total Meal: " + totalCost.toFixed(2);
         }
 
-
     </script>
+
+        <footer>
+        <p><small> References: </small></p>
+        <p><small> W3Schools.com. (n.d.). https://www.w3schools.com/tags/tag_footer.asp </small></p>
+        <p><small> W3Schools.com. (n.d.-b). https://www.w3schools.com/jsref/jsref_tofixed.asp </small></p>
+        <p><small> W3Schools.com. (n.d.-c). https://www.w3schools.com/jsref/jsref_parsefloat.asp </small></p>
+    </footer>
 
 </body>
 </html>
