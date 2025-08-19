@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        aaaaahhhh
+    </title>
+</head>
+<body>
+    <div>How much nuggets do you want to eat?
+        <br />
+        <input id="inp_resp">
+        <button id="btn_submit">Submit</button>
+    </div>
+    <script type="text/javascript">
+        const btn = document.getElementById("btn_submit");
+        const resp = document.getElementById("inp_resp");
+
+        btn.addEventListener('click', btn_clicked);
+        function btn_clicked() {
+            alert(resp.value);
+            alert("You get " + (100-resp.value) + " nuggets");
+            document.write("You get " + (100-resp.value) + " nuggets");
+            console.log("You get " + (100-resp.value) + " nuggets")
+        }
+    </script>
+</body>
