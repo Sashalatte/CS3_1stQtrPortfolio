@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+   <h2> Q1 3rd Graded Exercise submitted by Sasha Chua of 9 - Rubidium</h2>
+
+    <script>
+        document.write("Guess the Number: **** <br><br>"); 
+        document.write("The number is from 1 to 100 <br><br>");
+        document.write('<label> Enter your guess: <input id="guess" /> </label> <br><br>');
+        document.write('<button onclick="checkIt()"> Check it </button> <br> <p> <span id="result"> </span> </p>');
+
+        var dNumber = Math.floor(Math.random() * 100) + 1;
+
+        function checkIt() {
+            var guess = document.getElementById("guess").value;
+            var result = "";
+
+            if(guess == dNumber){
+                result = "You are correct!";
+            }
+            else if (guess < dNumber){
+                result = "Higher";
+            }
+            else{
+                result = "Lower";
+            }
+
+            document.getElementById("result").innerHTML = "Result: " + result;
+        }
+    </script>
+
+</body>
+</html>
